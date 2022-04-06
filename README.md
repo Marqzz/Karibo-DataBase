@@ -1,1 +1,1 @@
-[Documentatie BD-P (1).pdf](https://github.com/Marqzz/Karibo-DataBase/files/8429369/Documentatie.BD-P.1.pdf)
+Proiectul urmăreşte rezolvarea unei probleme de complexitate medie privind proiectarea unui sistem informatic care gestionează și prelucrează date folosind cunoştinţe de prelucrarea datelor din baze de date relaționale folosind limbajul SQL şi SQL Developer Data Modeler furnizat de Oracle.
