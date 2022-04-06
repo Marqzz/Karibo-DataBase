@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B37F8B4-3DB0-470F-C2AD-3F7ABAA4AF32" name="Cantitate">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>12D85B0E-1E21-0122-041D-16C876767FAF</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_cantitate" id="82983170-F21D-D255-A34D-F0E50D16843F">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>DF26240D-114D-3860-1929-5938A17CB94A</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantitate_ml" id="825A4AF5-0DCF-F244-390E-C88F49C95B2E">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>39205738-594E-88F0-5A68-2E50880E4107</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<listOfValues>
+<valueDef value="100" description="100 ml"/>
+<valueDef value="30" description="30 ml"/>
+<valueDef value="50" description="50 ml"/>
+<valueDef value="75" description="75 ml"/>
+</listOfValues>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E87B0CB-7AE4-ACBE-8CBA-688B8B725E25" name="Cantitate_PK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>8058E8F8-FC13-17AF-4759-41CAD694A383</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82983170-F21D-D255-A34D-F0E50D16843F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

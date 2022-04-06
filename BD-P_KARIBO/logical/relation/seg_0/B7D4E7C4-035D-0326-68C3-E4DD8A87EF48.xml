@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Istoric Comenzi" directorySegmentName="seg_0" id="B7D4E7C4-035D-0326-68C3-E4DD8A87EF48">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 19:01:34 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>contine</nameOnSource>
+<nameOnTarget>este inclus</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>3B0B9B52-FF24-9F6E-3180-CA3A0E4010D9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0647D08B-B5CC-D286-F4D3-D9CA5DCDBC75</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="nr_produse" id="D1337259-20EB-D770-E0B9-1BF4BD070AE4">
+<createdBy>user</createdBy>
+<createdTime>2021-11-26 08:31:36 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

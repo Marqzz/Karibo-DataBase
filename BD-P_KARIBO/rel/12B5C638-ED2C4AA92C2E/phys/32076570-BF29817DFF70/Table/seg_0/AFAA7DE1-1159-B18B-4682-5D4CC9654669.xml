@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Parfum" directorySegmentName="seg_0" id="AFAA7DE1-1159-B18B-4682-5D4CC9654669">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Miros_id_miros" id="2147115F-AF88-ACBE-6AB1-4946CBBA55DD">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pret_parfum" id="545CCBC7-F584-3CDA-E13F-F8D6A0ADA1AB">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="denumire_parfum" id="5D0E6367-8C4E-341A-9475-7EC37E5605AF">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Marca_id_marca" id="783E9DAF-4FBA-308F-F974-51AD133DCA09">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Cantitate_id_cantitate" id="9FE8EA13-903E-7595-6611-DBDAB291BABA">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_parfum" id="B08C825D-C2FA-7641-DC81-EA18403DEE80">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tip_parfum" id="BF630B9A-1B45-0B85-B472-96244F52A9FB">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Parfum_Cantitate_FK" id="1521620F-4973-145C-DF4C-42F6378B55DC">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Parfum_Marca_FK" id="23D1E4D0-E82D-D5F5-64ED-EAEE47ABBD7F">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Parfum_Miros_FK" id="6FEADA23-72AF-AF8F-E0C1-C1281B7040A1">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Parfum_PK" id="B43E5E38-F199-69CF-4188-E84AFA9A1D2A">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

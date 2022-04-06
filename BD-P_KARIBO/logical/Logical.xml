@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F69AE4D9-7C85-2FF9-BB3C-682D37FE0DCF" mainViewID="14B0F387-FAEF-219E-C933-A6BA7CB242EB">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:55:17 UTC</createdTime>
+<ownerDesignName>logical-karibo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="ABBE8A56-FA20-867C-D07E-E579B6A65D6E">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:55:18 UTC</createdTime>
+<ownerDesignName>logical-karibo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

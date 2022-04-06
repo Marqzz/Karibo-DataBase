@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A6A57C4-4EA8-930C-AB93-DD69DC47BE52" name="Marca">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>8D898048-2877-CACD-E259-FE1628EF4AD5</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_marca" id="2D332007-7BEF-3974-0B0E-4C77ABD2EDA0">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>DE063498-53C8-F84D-4E6B-A0EC66899D69</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_marca" id="5CC5518F-AE7D-348A-7793-0F1E0396354D">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>C2079012-83AB-3179-A103-78674885E4DA</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_marca)&gt;=2"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D7A79D1-7748-E8C0-ED79-F1B48A4CD5F2" name="Marca_PK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>AC423EA7-CD86-3864-E2A0-B9A60210AFDC</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D332007-7BEF-3974-0B0E-4C77ABD2EDA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F450AAA6-2D24-C99B-749F-A7F3AB24B207" name="Marca_nume_marca_UN">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>41B8EA3E-1F95-B57D-F1FA-BFB6F76A0F5B</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CC5518F-AE7D-348A-7793-0F1E0396354D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8D898048-2877-CACD-E259-FE1628EF4AD5" name="Marca">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 18:45:27 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_marca" id="DE063498-53C8-F84D-4E6B-A0EC66899D69">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 18:48:58 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_marca" id="C2079012-83AB-3179-A103-78674885E4DA">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 18:49:19 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_marca)&gt;=2"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AC423EA7-CD86-3864-E2A0-B9A60210AFDC" name="Distribuitor PK">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 18:49:15 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DE063498-53C8-F84D-4E6B-A0EC66899D69</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="41B8EA3E-1F95-B57D-F1FA-BFB6F76A0F5B" name="nume_marca_uk">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:03:38 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<newElementsIDs>C2079012-83AB-3179-A103-78674885E4DA</newElementsIDs>
+<usedAttributes>
+<attributeRef>C2079012-83AB-3179-A103-78674885E4DA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

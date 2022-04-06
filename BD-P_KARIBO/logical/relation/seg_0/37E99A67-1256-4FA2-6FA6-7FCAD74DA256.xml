@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_11" directorySegmentName="seg_0" id="37E99A67-1256-4FA2-6FA6-7FCAD74DA256">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 19:29:32 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<sourcePk>8058E8F8-FC13-17AF-4759-41CAD694A383</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>regasita</nameOnSource>
+<nameOnTarget>are</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>12D85B0E-1E21-0122-041D-16C876767FAF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0647D08B-B5CC-D286-F4D3-D9CA5DCDBC75</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="Clienti" directorySegmentName="seg_0" id="12993012-EC2A-CC41-2367-CE52CDF630F3">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="prenume_client" id="34DF4181-C0FF-7782-A977-2B80616CEE2E">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume_client" id="45EC4CFF-E85B-EF95-710D-1547AF55C791">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_client" id="67E70C86-C60E-DB3E-DF98-F17C7F6C0628">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Clienti_PK" id="0A601BF9-0645-169B-3FEE-61F759723029">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="58D9C458-065C-5C3E-1F12-04E8B7B0EDDA" name="Miros">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>87A7F5F8-A3F9-D8E7-5B61-54CF8F21C9B2</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_miros" id="05A441B1-220E-E1F4-9C85-37945F10F393">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>F7B0A36A-4B42-823C-D56C-93B56A96A6EF</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_miros" id="54B7D377-6DB6-9380-61D9-3716502B58AD">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>B17BEFD5-829A-9C40-B3F8-36FCCF285691</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire_miros)&gt;=2"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96635ACF-9F2A-212C-0A89-FADCF4D6B6A0" name="Miros_PK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>B510D6AA-5361-6AE5-2F20-C9646B45011B</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05A441B1-220E-E1F4-9C85-37945F10F393"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

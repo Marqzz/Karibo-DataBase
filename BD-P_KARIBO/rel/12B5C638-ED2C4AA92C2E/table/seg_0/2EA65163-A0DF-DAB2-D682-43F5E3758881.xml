@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2EA65163-A0DF-DAB2-D682-43F5E3758881" name="Cont_Client">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>6E155B59-136B-8F14-35CE-0EB44301C849</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Clienti_id_client" id="E5DC296A-48DA-58B1-27E1-C305513DD796">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>4BDAD3AC-1EF9-0640-DD91-C0059F5A6C2C</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E73F9820-1B71-6683-0342-346A6D9EC0C5" referredColumn="67E70C86-C60E-DB3E-DF98-F17C7F6C0628"/>
+</associations>
+</Column>
+<Column name="CNP" id="83D5E267-CD66-6DBF-90D0-983107C63056">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>488526CA-A051-2CE5-8EA6-073D8553C02F</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="( substr(CNP,1,1) BETWEEN 1 AND 8 )  AND  ( substr(CNP,2,2) IN (00,01,02,03,04,05,06,07,08,09) OR  substr(CNP,2,2) BETWEEN 10 AND 99  )  AND ( substr(CNP,4,2) IN (01,02,03,04,05,06,07,08,09,10,11,12) ) AND ( substr(CNP,6,2) IN (01,02,03,04,05,06,07,08,09) OR substr(CNP,6,2) BETWEEN 10 AND 31 ) AND ( substr(CNP,8,2) IN (01,02,03,04,05,06,07,08,09,51,52) OR substr(CNP,8,2) BETWEEN 10 AND 46 ) "/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sold" id="C30E34AC-4095-56C9-C5D9-F5DAF71266C3">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>A4E2D934-7E8C-5814-0076-B122C28177CD</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="Oras_client" id="DDA795C3-CA6B-C938-F79E-8243AAA83506">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>0F72150A-2E78-2F72-8157-308EEEDA27E4</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Oras_client)&gt;2 and REGEXP_LIKE(Oras_client,  &apos;^[A-Za-z]+$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B5E1C56-8260-0103-3AAE-F802FC99E540" name="Cont_Client_PK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>A1DCA3F6-1DA4-DD46-D6C4-51589942CC10</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5DC296A-48DA-58B1-27E1-C305513DD796"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AF0AE7CD-B64E-FDD7-9B3A-BB4336B7896E" name="Cont_Client_CNP_UN">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>E6BFDF19-61E6-14D5-F8C8-5C8B7889D594</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83D5E267-CD66-6DBF-90D0-983107C63056"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C924DF54-688A-9BE1-E729-6E77249573C9" name="Cont_Client_Clienti_FK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>70DFDB99-6DEB-3138-A06E-A84D02D09C83</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5DC296A-48DA-58B1-27E1-C305513DD796"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

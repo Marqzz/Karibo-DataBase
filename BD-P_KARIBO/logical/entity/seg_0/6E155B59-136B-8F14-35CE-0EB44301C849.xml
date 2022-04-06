@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E155B59-136B-8F14-35CE-0EB44301C849" name="Cont Client">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 19:05:56 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_client" id="4BDAD3AC-1EF9-0640-DD91-C0059F5A6C2C">
+<createdBy>user</createdBy>
+<createdTime>2021-12-17 11:44:07 UTC</createdTime>
+<generatorID>70DFDB99-6DEB-3138-A06E-A84D02D09C83</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<referedAttribute>DF123ED0-4225-9948-56A7-0CB0058F244C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CNP" id="488526CA-A051-2CE5-8EA6-073D8553C02F">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 19:06:42 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="( substr(CNP,1,1) BETWEEN 1 AND 8 )  AND  ( substr(CNP,2,2) IN (00,01,02,03,04,05,06,07,08,09) OR  substr(CNP,2,2) BETWEEN 10 AND 99  )  AND ( substr(CNP,4,2) IN (01,02,03,04,05,06,07,08,09,10,11,12) ) AND ( substr(CNP,6,2) IN (01,02,03,04,05,06,07,08,09) OR substr(CNP,6,2) BETWEEN 10 AND 31 ) AND ( substr(CNP,8,2) IN (01,02,03,04,05,06,07,08,09,51,52) OR substr(CNP,8,2) BETWEEN 10 AND 46 ) "/>
+</checkConstraint>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sold" id="A4E2D934-7E8C-5814-0076-B122C28177CD">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 19:06:52 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>9999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="Oras_client" id="0F72150A-2E78-2F72-8157-308EEEDA27E4">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 19:07:06 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(Oras_client)&gt;2 and REGEXP_LIKE(Oras_client,  &apos;^[A-Za-z]+$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A1DCA3F6-1DA4-DD46-D6C4-51589942CC10" name="Cont Client PK">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 19:06:11 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4BDAD3AC-1EF9-0640-DD91-C0059F5A6C2C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E6BFDF19-61E6-14D5-F8C8-5C8B7889D594" name="cnp_uk">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 20:59:03 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<newElementsIDs>488526CA-A051-2CE5-8EA6-073D8553C02F</newElementsIDs>
+<usedAttributes>
+<attributeRef>488526CA-A051-2CE5-8EA6-073D8553C02F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,99 @@
+insert into miros (denumire_miros) values ('Miros Fructat');
+insert into miros (denumire_miros) values ('Miros Lemnos');
+insert into miros (denumire_miros) values ('Miros Oriental');
+insert into miros (denumire_miros) values ('Miros Floral');
+insert into miros (denumire_miros) values ('Miros Gurmand');
+insert into miros (denumire_miros) values ('Miros Fresh');
+insert into miros (denumire_miros) values ('Miros Oceanic');
+insert into miros (denumire_miros) values ('Miros Citric');
+
+insert into cantitate (cantitate_ml) values (30);
+insert into cantitate (cantitate_ml) values (50);
+insert into cantitate (cantitate_ml) values (75);
+insert into cantitate (cantitate_ml) values (100);
+
+insert into marca (nume_marca) values ('Gucci');
+insert into marca (nume_marca) values ('Coco Channel');
+insert into marca (nume_marca) values ('Douglas');
+insert into marca (nume_marca) values ('Calvin Klein');
+insert into marca (nume_marca) values ('Sephora');
+insert into marca (nume_marca) values ('Str8');
+insert into marca (nume_marca) values ('1 milion');
+
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK One','B',30,4,1,1);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK One','B',40,4,2,1);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK One','B',50,4,3,1);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK One','B',50,4,4,1);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK One','F',40,4,2,2);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK Be','F',40,4,1,2);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK Be','F',50,4,2,3);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK Be','F',60,4,3,2);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK Be','F',70,4,4,2);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CK Be','B',60,4,3,1);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Gucci Snake','F',100,1,1,3);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Gucci Snake','F',200,1,2,3);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Gucci Snake','B',100,1,1,3);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Gucci Snake','B',200,1,2,3);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CC Mademoiselle','F',400,1,2,3);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('CC Mademoiselle','F',500,1,3,3);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Str8 FR34K','B',50,6,1,6);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Str8 FR34K','B',60,6,2,6);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Str8 FR34K','B',70,6,3,6);
+insert into parfum (denumire_parfum,tip_parfum,pret_parfum,marca_id_marca,cantitate_id_cantitate,miros_id_miros) values ('Str8 FR34K','B',80,6,4,6);
+
+
+
+
+insert into clienti (nume_client,prenume_client) values ('Petruca','Marcu');
+insert into clienti (nume_client,prenume_client) values ('Diana','Larisa');
+insert into clienti (nume_client,prenume_client) values ('Luiza','Natalia');
+insert into clienti (nume_client,prenume_client) values ('Ionita','Marian');
+insert into clienti (nume_client,prenume_client) values ('Sandrino','Paul');
+insert into clienti (nume_client,prenume_client) values ('Berbece','Antonio');
+insert into clienti (nume_client,prenume_client) values ('Bogdan','Paul');
+insert into clienti (nume_client,prenume_client) values ('Toma','Andrei');
+insert into clienti (nume_client,prenume_client) values ('Popescu','Mihai');
+insert into clienti (nume_client,prenume_client) values ('Cerasela','Paula');
+insert into clienti (nume_client,prenume_client) values ('Teofil','Ioan');
+insert into clienti (nume_client,prenume_client) values ('Mircea','Bravo');
+insert into clienti (nume_client,prenume_client) values ('Tincu','Stefan');
+insert into clienti (nume_client,prenume_client) values ('Stefania','Mirabela');
+
+
+
+
+
+insert into cont_client (clienti_id_client,cnp,sold) values (1,5001223270010,900);
+insert into cont_client (clienti_id_client,cnp,sold) values (2,5001223270011,800);
+insert into cont_client (clienti_id_client,cnp,sold) values (3,5001223270012,700);
+insert into cont_client (clienti_id_client,cnp,sold) values (4,5001223270013,900);
+insert into cont_client (clienti_id_client,cnp,sold) values (5,5001223270014,700);
+insert into cont_client (clienti_id_client,cnp,sold) values (6,5001223270015,900);
+insert into cont_client (clienti_id_client,cnp,sold) values (7,5001223270016,800);
+insert into cont_client (clienti_id_client,cnp,sold) values (8,5001223270017,700);
+insert into cont_client (clienti_id_client,cnp,sold) values (9,5001223270018,500);
+insert into cont_client (clienti_id_client,cnp,sold) values (10,5001223270019,400);
+insert into cont_client (clienti_id_client,cnp,sold) values (11,5001223270020,700);
+insert into cont_client (clienti_id_client,cnp,sold) values (12,5001223270030,100);
+insert into cont_client (clienti_id_client,cnp,sold) values (13,5001223270040,50);
+insert into cont_client (clienti_id_client,cnp,sold) values (14,5001223270050,900);
+
+
+insert into comanda (clienti_id_client,data_comanda) values (1,to_date('23-FEB-2019'));
+insert into comanda (clienti_id_client,data_comanda) values (2,to_date('25-FEB-2019'));
+insert into comanda (clienti_id_client,data_comanda) values (1,to_date('23-MAR-2019'));
+insert into comanda (clienti_id_client,data_comanda) values (3,to_date('4-DEC-2020'));
+insert into comanda (clienti_id_client,data_comanda) values (4,to_date('19-JUN-2021'));
+insert into comanda (clienti_id_client,data_comanda) values (5,to_date('20-JUL-2018'));
+
+
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (1,1,1,5);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (1,1,2,2);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (2,2,1,5);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (4,3,1,5);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (4,3,2,1);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (4,3,3,1);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (5,4,1,5);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (6,5,1,5);
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (3,1,17,1);
+

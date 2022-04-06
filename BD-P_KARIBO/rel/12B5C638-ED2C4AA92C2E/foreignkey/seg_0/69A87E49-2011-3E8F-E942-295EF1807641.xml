@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="69A87E49-2011-3E8F-E942-295EF1807641" containerWithKeyObject="AFAA7DE1-1159-B18B-4682-5D4CC9654669" localFKIndex="23D1E4D0-E82D-D5F5-64ED-EAEE47ABBD7F" name="Parfum_Marca_FK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>0EBEA4D5-B6D4-ED93-77C9-C717B54A298A</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<referredTableLongName>Marca</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6A6A57C4-4EA8-930C-AB93-DD69DC47BE52</referredTableID>
+<keyObject>2D7A79D1-7748-E8C0-ED79-F1B48A4CD5F2</keyObject>
+<referredKeyID>2D7A79D1-7748-E8C0-ED79-F1B48A4CD5F2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_marca</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

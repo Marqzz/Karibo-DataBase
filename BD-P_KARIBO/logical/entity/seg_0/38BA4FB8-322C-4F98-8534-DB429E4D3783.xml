@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38BA4FB8-322C-4F98-8534-DB429E4D3783" name="Clienti">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:55:39 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_client" id="DF123ED0-4225-9948-56A7-0CB0058F244C">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:56:04 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_client" id="570B90B2-617D-16B0-702D-F25F9444C84F">
+<createdBy>user</createdBy>
+<createdTime>2021-12-21 07:00:34 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(nume_client)&gt;2 and REGEXP_LIKE(nume_client,  &apos;^[A-Za-z]+$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prenume_client" id="82427A2A-AB2B-BE0D-F968-043DD23C7C8C">
+<createdBy>user</createdBy>
+<createdTime>2021-12-21 07:01:04 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(prenume_client)&gt;2 and REGEXP_LIKE(prenume_client,  &apos;^[A-Za-z]+$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8DAFEF50-26A9-7C42-B526-1E8A6A25CA3A" name="Clienti PK">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:56:13 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DF123ED0-4225-9948-56A7-0CB0058F244C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3B0B9B52-FF24-9F6E-3180-CA3A0E4010D9" name="Comanda">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:58:38 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_comanda" id="A4EF1C92-7680-86EB-AF3B-CEBEFE19033A">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:59:01 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="98B85ED0-31D5-0A8F-B46C-61AD466D5ED4">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 11:08:29 UTC</createdTime>
+<generatorID>F705E270-A76A-042D-7FB5-DFBD651D4CA2</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<referedAttribute>DF123ED0-4225-9948-56A7-0CB0058F244C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_comanda" id="940620BD-A503-891C-1337-D7CC84D29EAF">
+<createdBy>user</createdBy>
+<createdTime>2021-11-26 08:32:57 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A6CA2F8C-4599-64A1-BEC5-6896652AD1E9" name="Comanda PK">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:59:14 UTC</createdTime>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="12B5C638-978B-BD37-B44F-ED2C4AA92C2E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A4EF1C92-7680-86EB-AF3B-CEBEFE19033A</attributeRef>
+<attributeRef>98B85ED0-31D5-0A8F-B46C-61AD466D5ED4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

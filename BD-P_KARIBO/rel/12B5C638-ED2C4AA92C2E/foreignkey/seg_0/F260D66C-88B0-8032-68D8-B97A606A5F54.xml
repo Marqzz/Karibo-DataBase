@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F260D66C-88B0-8032-68D8-B97A606A5F54" containerWithKeyObject="AFAA7DE1-1159-B18B-4682-5D4CC9654669" localFKIndex="6FEADA23-72AF-AF8F-E0C1-C1281B7040A1" name="Parfum_Miros_FK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>C8D3BA1A-E489-4C75-5909-F4BEB5E39B3E</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<referredTableLongName>Miros</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>58D9C458-065C-5C3E-1F12-04E8B7B0EDDA</referredTableID>
+<keyObject>96635ACF-9F2A-212C-0A89-FADCF4D6B6A0</keyObject>
+<referredKeyID>96635ACF-9F2A-212C-0A89-FADCF4D6B6A0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_miros</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

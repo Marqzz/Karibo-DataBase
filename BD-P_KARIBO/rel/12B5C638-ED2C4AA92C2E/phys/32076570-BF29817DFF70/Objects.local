@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="12993012-EC2A-CC41-2367-CE52CDF630F3" name="Clienti" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="1AC1AFA7-41F8-EBDB-C802-5FFD525C679A" name="Istoric_Comenzi" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="1B37F8B4-3DB0-470F-C2AD-3F7ABAA4AF32" name="Cantitate" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="2EA65163-A0DF-DAB2-D682-43F5E3758881" name="Cont_Client" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="54BC434F-B796-B645-DE64-394D00319EE2" name="Comanda" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="58D9C458-065C-5C3E-1F12-04E8B7B0EDDA" name="Miros" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="6A6A57C4-4EA8-930C-AB93-DD69DC47BE52" name="Marca" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+   <object objectType="Table" objectID="AFAA7DE1-1159-B18B-4682-5D4CC9654669" name="Parfum" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" propertyParentId="32076570-BF29817DFF70"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>

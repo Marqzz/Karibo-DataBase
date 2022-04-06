@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="611D8777-7C86-2983-BA9D-93329579FDB4">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:55:18 UTC</createdTime>
+<ownerDesignName>logical-karibo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

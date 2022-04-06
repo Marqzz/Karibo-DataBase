@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BD-P_KARIBO" id="05DF4561-E0DD-4E02-552D-CB938ECB1EFA" version="3.5">
+<createdBy>user</createdBy>
+<createdTime>2021-11-05 10:55:17 UTC</createdTime>
+<ownerDesignName>logical-karibo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>05DF4561-E0DD-4E02-552D-CB938ECB1EFA</designId>
+</OSDM_Design>

@@ -1,0 +1,34 @@
+--pentru constrangeri de CNP ( sa fie valid)
+insert into cont_client (clienti_id_client,cnp,sold) values (1,1234567890010,900);
+
+--pentru demonstrarea UNIQUE CNP
+insert into cont_client (clienti_id_client,cnp,sold) values (1,5001223270010,900);
+
+--pentru demonstrarea trigger_data
+insert into comanda (clienti_id_client,data_comanda) values (1,to_date('23-FEB-2023'));
+
+--pentru trigger sold
+insert into istoric_comenzi (comanda_id_comanda,comanda_id_client,parfum_id_parfum,nr_produse) values (1,1,15,9);
+
+
+--pentru afisarea " frumoasa " a datelor din tabelul parfum
+select p.id_parfum,p.denumire_parfum,p.tip_parfum,p.pret_parfum,m.nume_marca,c.cantitate_ml,s.denumire_miros from parfum p,marca m, cantitate c,miros s where p.marca_id_marca = m.id_marca and p.cantitate_id_cantitate =
+c.id_cantitate and p.miros_id_miros = s.id_miros;
+
+
+--pentru afisarea "frumoasa " a datelor din tabelul comanda
+select c.id_comanda,cl.nume_client || ' ' || cl.prenume_client, c.data_comanda from comanda c,clienti cl where c.clienti_id_client = cl.id_client;
+
+--pentru a vedea fiecare client cat a cheltuit
+select comanda_id_comanda ,comanda_id_client,clienti.nume_client, sum(parfum.pret_parfum*nr_produse) "Total cheltuit"  from istoric_comenzi ,parfum,clienti where parfum.id_parfum = parfum_id_parfum and comanda_id_client = clienti.id_client group by comanda_id_comanda,comanda_id_client,clienti.nume_client;
+
+--pentru a vedea fiecare client ce parfum si de cate ori l-a comandat
+select clienti.nume_client , parfum.denumire_parfum,count(*)  "Numar parfumuri comandate" from clienti,parfum,istoric_comenzi where clienti.id_client = comanda_id_client and parfum.id_parfum = parfum_id_parfum group by clienti.nume_client , parfum.denumire_parfum;
+
+--pentru a vedea detaliile FULL despre flienti (nume,prenume,cnp,sold)
+ select clienti.nume_client,clienti.prenume_client , cont_client.cnp,cont_client.sold from clienti,cont_client where clienti.id_client = cont_client.clienti_id_client;
+
+
+
+
+

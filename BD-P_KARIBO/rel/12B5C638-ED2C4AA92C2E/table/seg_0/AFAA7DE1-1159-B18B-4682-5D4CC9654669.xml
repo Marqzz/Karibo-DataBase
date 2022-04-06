@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFAA7DE1-1159-B18B-4682-5D4CC9654669" name="Parfum">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>0647D08B-B5CC-D286-F4D3-D9CA5DCDBC75</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_parfum" id="B08C825D-C2FA-7641-DC81-EA18403DEE80">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>B9FCC0D2-D067-B125-E42E-32A067043BB3</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="denumire_parfum" id="5D0E6367-8C4E-341A-9475-7EC37E5605AF">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>42627D49-4098-6912-96B7-67A90D9F2805</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="length(denumire_parfum)&gt;=2"/>
+</checkConstraint>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tip_parfum" id="BF630B9A-1B45-0B85-B472-96244F52A9FB">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>E2C9495A-0AE6-1BA9-3C9D-ADE857E9D402</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Barbati"/>
+<valueDef value="F" description="Femei"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pret_parfum" id="545CCBC7-F584-3CDA-E13F-F8D6A0ADA1AB">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>31C97D18-3406-675C-12D0-FCAB26753599</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>20</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="Marca_id_marca" id="783E9DAF-4FBA-308F-F974-51AD133DCA09">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>4C6B453D-A39B-7FEB-0606-0C488F8696FF</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69A87E49-2011-3E8F-E942-295EF1807641" referredColumn="2D332007-7BEF-3974-0B0E-4C77ABD2EDA0"/>
+</associations>
+</Column>
+<Column name="Cantitate_id_cantitate" id="9FE8EA13-903E-7595-6611-DBDAB291BABA">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>77543017-471E-F165-88EC-5DF0C35D6C3A</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="45D4FDAE-FD46-0256-1055-6672B0AA4F35" referredColumn="82983170-F21D-D255-A34D-F0E50D16843F"/>
+</associations>
+</Column>
+<Column name="Miros_id_miros" id="2147115F-AF88-ACBE-6AB1-4946CBBA55DD">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>94C11CEB-EF87-7002-991A-3DDD58F42D66</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F260D66C-88B0-8032-68D8-B97A606A5F54" referredColumn="05A441B1-220E-E1F4-9C85-37945F10F393"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B43E5E38-F199-69CF-4188-E84AFA9A1D2A" name="Parfum_PK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>C8B49D43-847F-1C8B-264F-B8DE5FD50B35</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B08C825D-C2FA-7641-DC81-EA18403DEE80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1521620F-4973-145C-DF4C-42F6378B55DC" name="Parfum_Cantitate_FK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>37E99A67-1256-4FA2-6FA6-7FCAD74DA256</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FE8EA13-903E-7595-6611-DBDAB291BABA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FEADA23-72AF-AF8F-E0C1-C1281B7040A1" name="Parfum_Miros_FK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>C8D3BA1A-E489-4C75-5909-F4BEB5E39B3E</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2147115F-AF88-ACBE-6AB1-4946CBBA55DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23D1E4D0-E82D-D5F5-64ED-EAEE47ABBD7F" name="Parfum_Marca_FK">
+<createdBy>user</createdBy>
+<createdTime>2021-12-22 21:51:14 UTC</createdTime>
+<generatorID>0EBEA4D5-B6D4-ED93-77C9-C717B54A298A</generatorID>
+<ownerDesignName>BD-P_KARIBO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="783E9DAF-4FBA-308F-F974-51AD133DCA09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
